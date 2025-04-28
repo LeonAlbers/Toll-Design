@@ -1,14 +1,13 @@
-const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
+const burgerIcon = document.getElementById("burger-icon");
 
-hamburger.addEventListener("click", () => {
+// Toggle between burger and times icon
+burgerIcon.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 
-  console.log(hamburger.innerHTML);
-
-  if (hamburger.innerHTML === "☰") {
-    hamburger.innerHTML = "&times;";
+  if (burgerIcon.src.includes("burger-icon.svg")) {
+    burgerIcon.src = "res/times-icon.svg"; // Switch to times icon
   } else {
-    hamburger.innerHTML = "☰";
+    burgerIcon.src = "res/burger-icon.svg"; // Switch back to burger icon
   }
 });
