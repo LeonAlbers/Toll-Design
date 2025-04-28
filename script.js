@@ -11,3 +11,12 @@ burgerIcon.addEventListener("click", () => {
     burgerIcon.src = "res/burger-icon.svg"; // Switch back to burger icon
   }
 });
+
+// Close the menu when a link is clicked
+const navLinks = document.querySelectorAll("#nav-menu a");
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+    burgerIcon.src = "res/burger-icon.svg"; // Switch back to burger icon
+  });
+});
