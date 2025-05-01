@@ -17,7 +17,7 @@ body {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(
-    60px + 5px + 0.5rem
+    73px + 0.5rem
   ); /* Adjust scroll position globally for sticky header */
 }
 
@@ -112,31 +112,6 @@ header {
   height: 40px;
   margin-right: 10px;
   font-size: 3rem;
-}
-
-.hero h1 {
-  font-size: 4rem;
-  color: var(--text-color);
-  margin: 0;
-  overflow-wrap: break-word;
-}
-
-.hero p {
-  font-size: 1.5rem;
-  color: var(--text-color);
-  margin: 0;
-}
-
-.hero {
-  margin-top: 100px;
-  margin-left: 40px;
-  margin-right: 40px;
-  min-height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  max-width: 1000px;
-  scroll-margin-top: 100px;
 }
 
 /* Media Querie Section */
