@@ -1,4 +1,4 @@
-// Redirection to the Galery
-function galeryRedirect() {
-  window.location.href = "galery.html";
+// Redirection to the Gallery
+function galleryRedirect() {
+  window.location.href = "gallery.html";
 }
