@@ -12,6 +12,21 @@ burgerIcon.addEventListener("click", () => {
   }
 });
 
+// Add keyboard accessibility for the hamburger menu
+burgerIcon.setAttribute("tabindex", "0"); // Make it focusable with Tab
+
+burgerIcon.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    navMenu.classList.toggle("active");
+
+    if (burgerIcon.src.includes("burger-icon.svg")) {
+      burgerIcon.src = "res/times-icon.svg"; // Switch to times icon
+    } else {
+      burgerIcon.src = "res/burger-icon.svg"; // Switch back to burger icon
+    }
+  }
+});
+
 // Close the menu when a link is clicked
 const navLinks = document.querySelectorAll("#nav-menu a");
 navLinks.forEach((link) => {
@@ -47,7 +62,7 @@ const observer = new IntersectionObserver(
     }
   },
   {
-    threshold: Array.from({ length: 101 }, (_, i) => i / 100), // 0.00 bis 1.00
+    threshold: 0.6, // 50% der Sektion sichtbar
   }
 );
 

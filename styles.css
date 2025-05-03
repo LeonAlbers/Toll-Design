@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 
 :root {
-  --primary-color: #ffffff;
-  --secondary-color: #3aa6d4;
-  --text-color: #272727;
+  --primary-color: #f7fbfd;
+  --secondary-color: #0c8ce9;
+  --text-color-dark: #353535;
+  --text-color-light: #ffffff;
   --font-family: "Roboto", sans-serif;
 }
 
@@ -26,6 +27,7 @@ header {
   top: 0;
   margin: 0;
   padding: 0;
+  z-index: 1000;
 }
 
 .navbar {
@@ -136,15 +138,14 @@ header {
     border-radius: 10px;
     box-shadow: 1px 2px 5px 1px rgba(128, 128, 128, 0.521);
     transition: all 0.2s ease-in-out;
+    visibility: hidden;
+    pointer-events: none;
   }
   .nav-menu.active {
     right: 0;
     transition: all 0.2s ease-in-out;
-  }
-  .hero h1 {
-    font-size: 3rem;
-  }
-  .hero p {
-    font-size: 1.25rem;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 1000;
   }
 }
