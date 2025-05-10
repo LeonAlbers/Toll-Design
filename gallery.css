@@ -1,0 +1,74 @@
+body {
+  background-color: var(--primary-color);
+}
+
+.heading {
+  color: var(--text-color-dark);
+  font-size: 3rem;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-align: center;
+}
+.card {
+  border-radius: 8px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #e2e2e28a;
+  padding-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card .card-content {
+  padding: 20px;
+}
+
+.card .card-content h2 {
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 10px;
+  color: var(--text-color-dark);
+}
+
+.card .card-content p {
+  font-size: 1rem;
+  color: rgb(138, 138, 138);
+}
+
+.card img {
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+  height: 225px;
+  width: 100%;
+}
+
+.btn.card-btn {
+  background-color: var(--secondary-color);
+  border-radius: 9999px;
+  border: none;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-top: auto;
+  align-self: center; /* Zentriert den Button horizontal */
+}
+
+.btn.card-btn:hover {
+  background-color: #177fca;
+  transition: background-color 0.3s ease;
+}
+
+.btn.card-btn:active {
+  background-color: #3caeff;
+  transition: background-color 0.1s ease;
+}
