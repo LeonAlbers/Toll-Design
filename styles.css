@@ -31,12 +31,13 @@ header {
 }
 
 .navbar {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.805);
+  backdrop-filter: blur(5px);
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 5px;
   border-radius: 10px;
-  box-shadow: 1px 2px 5px 1px rgba(128, 128, 128, 0.521);
+  box-shadow: 1px 2px 5px 1px rgba(128, 128, 128, 0.291);
   overflow: hidden;
   padding: 0.5rem;
   display: flex;
@@ -63,6 +64,7 @@ header {
 .nav-menu li a {
   text-decoration: none;
   color: #7c7c7c;
+  font-weight: 800;
 }
 
 .nav-menu li a:hover {
@@ -70,8 +72,8 @@ header {
 }
 
 .nav-menu li a.active {
-  color: var(--text-color);
-  font-weight: 900;
+  color: var(--text-color-dark);
+  font-weight: bolder;
 }
 
 .logo {

@@ -68,6 +68,7 @@
   text-align: center;
   color: var(--text-color-dark);
   font-weight: bold;
+  overflow-wrap: break-word;
 }
 
 .infos p {

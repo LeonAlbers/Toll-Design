@@ -9,7 +9,8 @@ body {
   text-decoration: underline;
   text-align: center;
 }
-.card {
+
+.card-grid .card {
   border-radius: 8px;
   background-color: #ffffff;
   display: flex;
@@ -71,4 +72,40 @@ body {
 .btn.card-btn:active {
   background-color: #3caeff;
   transition: background-color 0.1s ease;
+}
+
+.card-in-middle {
+  margin-top: 50px;
+  padding: 5rem 0 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1d;
+}
+
+.card-in-middle .card {
+  background-color: #34343969;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 4rem;
+  aspect-ratio: 1/1;
+  max-width: 600px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.165);
+}
+
+.card-in-middle .card h1 {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.card-in-middle .card p {
+  padding: 0;
+  margin: 2rem 0 0 0;
+  color: rgb(136, 136, 140);
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: bold;
 }
