@@ -109,3 +109,90 @@ body {
   line-height: 2.25rem;
   font-weight: bold;
 }
+
+.contact-form {
+  background-color: #1a1a1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  font: inherit;
+  width: 100%;
+}
+
+.contact-form h1 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-form label {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 5px;
+  background-color: #5e5e6989;
+  border: none;
+  font-size: 1.25rem;
+  resize: none;
+  padding: 0.5rem;
+  accent-color: #7b7b82ce;
+  color: white;
+  font-family: inherit;
+}
+
+.contact-form input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: rgb(69, 162, 255);
+}
+
+.contact-form a {
+  color: rgb(69, 162, 255);
+}
+
+.contact-form a:visited {
+  color: rgb(69, 162, 255);
+}
+
+.contact-form button {
+  background-color: rgb(69, 162, 255);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  justify-self: center;
+}
+
+.contact-form .container {
+  background-color: #34343969;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.165);
+  width: calc(100% - 4rem);
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.contact-form .contactForm {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form .form-group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact-form .form-group:has(input[type="checkbox"]) {
+  display: flex;
+}
