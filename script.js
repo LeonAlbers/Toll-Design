@@ -1,6 +1,7 @@
 const navMenu = document.getElementById("nav-menu");
 const navBar = document.getElementById("navbar");
 const burgerIcon = document.getElementById("burger-icon");
+const account = document.getElementById("accountBild");
 
 // Toggle between burger and times icon
 burgerIcon.addEventListener("click", () => {
@@ -36,4 +37,10 @@ navLinks.forEach((link) => {
     navMenu.classList.remove("active");
     burgerIcon.src = "res/burger-icon.svg"; // Switch back to burger icon
   });
+});
+
+// Play sound when the account image is clicked
+const prankbrosAudio = new Audio("res/prankbros.mp3");
+account.addEventListener("click", () => {
+  prankbrosAudio.play();
 });
