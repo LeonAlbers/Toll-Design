@@ -1,9 +1,11 @@
 const navMenu = document.getElementById("nav-menu");
+const navBar = document.getElementById("navbar");
 const burgerIcon = document.getElementById("burger-icon");
 
 // Toggle between burger and times icon
 burgerIcon.addEventListener("click", () => {
   navMenu.classList.toggle("active");
+  navBar.classList.toggle("openMenu");
 
   if (burgerIcon.src.includes("burger-icon.svg")) {
     burgerIcon.src = "res/times-icon.svg"; // Switch to times icon

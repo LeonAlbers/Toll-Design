@@ -43,6 +43,11 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+  overflow: hidden;
+}
+
+.navbar.openMenu {
+  overflow: visible !important;
 }
 
 .nav-menu {
@@ -141,6 +146,7 @@ header {
     transition: all 0.2s ease-in-out;
     visibility: hidden;
     pointer-events: none;
+    overflow: visible;
   }
   .nav-menu.active {
     right: 0;

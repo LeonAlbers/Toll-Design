@@ -6,10 +6,11 @@
     <title>Galerie</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="gallery.css" />
+    <link rel="shortcut icon" href="res/logo.png" type="image/x-icon" />
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav class="navbar" id="navbar">
         <div class="logo">
           <a href="index.html#home">
             <img src="res/logo.png" alt="Logo" />
@@ -127,22 +128,105 @@
         <form class="contactForm" id="contactForm">
           <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Name" required />
-          </div> 
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              autocomplete="off"
+              required
+            />
+          </div>
           <div class="form-group">
             <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" placeholder="Email@beispiel.de" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email@beispiel.de"
+              autocomplete="off"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="message">Nachricht:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Nachricht" required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Nachricht"
+              autocomplete="off"
+              required
+            ></textarea>
           </div>
           <div class="form-group">
             <input type="checkbox" name="policy" id="policy" required />
-            <label for="policy">Ich akzeptiere, dass meine Daten nach <a target="_blank" href="terms.html">Privacy Policy</a> bearbeitet werden.</label>
+            <label for="policy"
+              >Ich akzeptiere, dass meine Daten nach
+              <a target="_blank" href="privacy-policy.html">Privacy Policy</a>
+              bearbeitet werden.</label
+            >
           </div>
-          <button type="submit" id="submit-btn" class="btn btn-primary">Absenden</button>
+          <button type="submit" id="submit-btn" class="btn btn-primary">
+            Absenden
+          </button>
         </form>
+      </div>
+    </section>
+    <section class="honig-bestellen" id="honig-bestellen">
+      <div class="container">
+        <img src="res/honig.jpg" alt="Honig Glas" />
+        <div class="content">
+          <h1>Raps Honig</h1>
+          <div class="available">
+            <div class="green-dot" id="green-dot"></div>
+            <p>+99 Verfügbar</p>
+          </div>
+          <p>
+            Dieser Honig ist ein Raps Honig. Er ist sehr lecker und eignet sich
+            hervorragend zum Backen oder als Brotaufstrich. Er ist härter als
+            Blütenhonig und hat eine helle, gelbliche Farbe.
+          </p>
+          <div class="bestellen">
+            <input
+              type="number"
+              name="menge"
+              id="menge"
+              placeholder="Menge"
+              min="1"
+              max="99"
+              required
+            />
+            <button class="btn">Bestellen</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="res/bluetenhonig.jpg" alt="Honig Glas" />
+        <div class="content">
+          <h1>Blüten Honig</h1>
+          <div class="available">
+            <div class="green-dot" id="green-dot"></div>
+            <p>+99 Verfügbar</p>
+          </div>
+          <p>
+            Dieser Honig ist ein Blüten Honig. Er ist sehr lecker und eignet
+            sich hervorragend für den Tee, zum Backen oder als Brotaufstrich. Er
+            ist weicher als Raps Honig und hat eine dunkel, goldene Farbe.
+          </p>
+          <div class="bestellen">
+            <input
+              type="number"
+              name="menge"
+              id="menge"
+              placeholder="Menge"
+              min="1"
+              max="99"
+              required
+            />
+            <button class="btn">Bestellen</button>
+          </div>
+        </div>
       </div>
     </section>
     <script src="script.js"></script>
